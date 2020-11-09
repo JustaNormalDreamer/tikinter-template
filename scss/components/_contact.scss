@@ -1,0 +1,47 @@
+.contact {
+    padding: 3rem;
+    .header {       
+        h4 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        p {
+            color: #6f6f6f;
+        }        
+    }
+    ul {
+        li {
+            margin: 1rem 0;
+            font-size: 1.25rem;
+            color: #6f6f6f;
+            i {
+                padding: 0 1rem 0 0;
+            }
+        }
+    }
+
+    form {
+        .form-group {
+            margin: 1rem 0;
+            textarea {
+                height: 150px;
+            }
+        }
+        .form-control {
+            background: #ebebeb;
+            border: 0;
+            border-radius: 0;
+        }
+    }
+}
+
+.sponsors {
+    padding: 3rem;
+    background: #fff;
+    img {
+        transition: all .3s;
+        &:hover {
+            opacity: .7;
+        }
+    }
+}

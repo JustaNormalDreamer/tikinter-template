@@ -14,5 +14,20 @@
             font-size: 1rem;
             color: #979797;
         }
+
+        .social__icons {
+            li {
+                display: inline-block;
+                padding: 2px;
+                font-size: 1.25rem;
+                a {
+                    color: #3f3f3f;
+                    transition: .3s;
+                    &:hover {
+                        color: #979797;
+                    }
+                }
+            }
+        }
     }
 }

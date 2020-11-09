@@ -21,27 +21,5 @@
                 }
             }
         }
-
-        .btn-primary {
-            border-radius: 0;
-            background: #000;
-            border: #000;
-            padding: 1rem 3rem;
-            &:hover {
-                background: #363636;
-            }
-        }
-
-        .btn-alternate {
-            border-radius: 0;
-            background: #fff;
-            border: #fff;
-            color: #000;
-            padding: 1rem 3rem;
-            &:hover {
-                background: #363636;
-                color: #fff;
-            }
-        }
     }
 }
