@@ -1,0 +1,38 @@
+.projects {
+    margin: 5rem 0;
+    .projects__wrapper {
+        margin: 1rem;
+        position: relative;
+        overflow: hidden;
+        &:hover {
+            .content {
+                display: block;
+            }
+            img {
+                transform: scale(1.2);
+        }
+        }
+        img {
+            transition: .5s;
+        }
+    }
+    .content {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        color: #ffffff;
+        display: none;
+        opacity: 0.8;
+        background: #555555;
+        padding: 1rem;
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+        &:hover {
+            color:  #858585;
+        }
+    }
+}

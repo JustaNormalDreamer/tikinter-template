@@ -1,0 +1,31 @@
+.cover {
+    background: url('../image/cover/cover.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+
+    .content {
+        padding: 5vw;
+    }
+    h3 {
+        font-size: 5vw;
+
+    }
+
+    a {
+        text-transform: uppercase;
+        color: #000;
+        background: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        transition: .5s;
+        &:hover {
+            color: #fff;
+            background:  #000;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f6f6f6;
+}
+
+//box shadows
+.box-shadow {
+    box-shadow: $box-shadow;
+}
+.box-shadow-hover {
+    transition: .5s;
+    &:hover {
+        box-shadow: $box-shadow;
+    }
+}
+
+//section header
+.section__header {
+    text-align: center;
+    h3 {
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        font-family: 'Montserrat', sans-serif;
+        // border-collapse: separate;
+        border-spacing: 2rem 0;
+        display: table;
+        font-size: 4em;
+        line-height: .25;
+        margin: .5em 0 .5em;
+        table-layout: auto;
+        text-shadow: .0625em .0625em 0 rgba(0, 0, 0, .2);
+        white-space: nowrap;
+        &:before, &:after {
+            border-top: 2px solid #424242;
+            content: '';
+            display: table-cell;
+            width: 50%;
+        }
+    }
+}
