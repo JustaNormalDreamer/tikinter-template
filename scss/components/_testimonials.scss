@@ -3,6 +3,11 @@
     padding: 3rem 0;
     .single {
         background: #f6f6f6;
+        border-radius: 10px;
+        transition: .5s;
+        &:hover {
+            opacity: .9;
+        }
     .quote {
             position: absolute;
             left: 0;
@@ -12,6 +17,7 @@
             color: #fff;
             margin: 0 0 0 1rem;
             padding: .5rem;
+            border-top-left-radius: 10px;
             @media only screen and (max-width: 768px) {
                 display: none;
             }
