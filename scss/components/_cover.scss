@@ -16,16 +16,16 @@
 
     a {
         text-transform: uppercase;
-        color: #000;
-        background: #fff;
+        color: $primary;
+        background: $secondary;
         font-size: 1.5rem;
         font-weight: bold;
         padding: 1rem 2rem;
         text-decoration: none;
         transition: .5s;
         &:hover {
-            color: #fff;
-            background:  #000;
+            color: $secondary;
+            background:  $primary;
         }
     }
 }

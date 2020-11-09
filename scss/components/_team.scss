@@ -1,5 +1,5 @@
 .teams {
-    background: #fff;
+    background: $secondary;
     padding: 5rem 0;
     .single__team {
         text-align: center;
@@ -12,7 +12,7 @@
         }
         h5 {
             font-size: 1rem;
-            color: #979797;
+            color:$ascent;
         }
 
         .social__icons {
@@ -21,10 +21,10 @@
                 padding: 2px;
                 font-size: 1.25rem;
                 a {
-                    color: #3f3f3f;
+                    color: $alternate;
                     transition: .3s;
                     &:hover {
-                        color: #979797;
+                        color:$ascent;
                     }
                 }
             }

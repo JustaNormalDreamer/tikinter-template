@@ -22,17 +22,17 @@
         bottom: 0;
         right: 0;
         left: 0;
-        color: #ffffff;
+        color:$secondary;
         display: none;
         opacity: 0.8;
-        background: #555555;
+        background: $alternate;
         padding: 1rem;
     }
     a {
         text-decoration: none;
-        color: #fff;
+        color:$secondary;
         &:hover {
-            color:  #858585;
+            color:  $ascent;
         }
     }
 }

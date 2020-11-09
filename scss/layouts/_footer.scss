@@ -1,11 +1,7 @@
-$footer-bg-color: #000;
-$footer-heading-color: #404040;
-$footer-text-color:#777777;
-
 footer {
-    background: $footer-bg-color;
+    background: $primary;
     .footer__header {
-        color: $footer-heading-color;
+        color: $alternate;
         text-transform: uppercase;
        h3 {
         font-size: 1.5rem;
@@ -13,15 +9,15 @@ footer {
        }
     }
     .content {
-        color:$footer-text-color;
+        color:$ascent;
         li {
             margin: .7rem 0;
             a {
                 text-decoration: none;
-                color: #fff;
+                color: $secondary;
                 transition: .5s;
                 &:hover {
-                    color:$footer-text-color;
+                    color:$ascent;
                 }
             }
         }
@@ -30,25 +26,25 @@ footer {
     .footer__bottom {
         margin-top: 5rem;
         text-align: center;
-        color: $footer-heading-color;
+        color: $alternate;
         text-transform: uppercase;
         h4 {
             font-size: 1.25rem;
         }
         .social__icons {
             a {
-                color: $footer-heading-color;
+                color: $alternate;
                 margin: .5rem;
                 transition: .3s;
                 .fab {
-                    border: 1px solid $footer-heading-color;
+                    border: 1px solid $alternate;
                     border-radius: 50%;
                     padding: 1rem;
                 }
                 &:hover {
                     .fab {
-                        color:#fff;
-                        background: $footer-text-color;
+                        color:$secondary;
+                        background: $ascent;
                     }
                 }
             }

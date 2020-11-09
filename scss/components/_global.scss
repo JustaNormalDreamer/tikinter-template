@@ -22,7 +22,6 @@ body {
         text-transform: uppercase;
         letter-spacing: .2rem;
         font-family: 'Montserrat', sans-serif;
-        // border-collapse: separate;
         border-spacing: 2rem 0;
         display: table;
         font-size: 4em;
@@ -32,7 +31,7 @@ body {
         text-shadow: .0625em .0625em 0 rgba(0, 0, 0, .2);
         white-space: nowrap;
         &:before, &:after {
-            border-top: 2px solid #424242;
+            border-top: 2px solid $alternate;
             content: '';
             display: table-cell;
             width: 50%;
@@ -56,19 +55,19 @@ body {
 }
 
 .btn-primary {
-    background: #000;
-    color: #fff;
+    background: $primary;
+    color: $secondary;
     &:hover {
-        background: #a5a5a5;
-        color: #000;
+        background: $ascent;
+        color: $primary;
     }
 }
 
 .btn-alternate {
-    background: #fff;
-    color: #000;
+    background: $secondary;
+    color: $primary;
     &:hover {
-        background: #363636;
-        color: #fff;
+        background: $alternate;
+        color: $secondary;
     }
 }

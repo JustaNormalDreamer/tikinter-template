@@ -1,11 +1,11 @@
 .pricing {
     margin: 5rem 0;
     .active {
-        background: #000 !important;
-        color: #fff;
+        background: $primary !important;
+        color: $secondary;
     }
     .single__product {
-        background: #fff;
+        background: $secondary;
         margin: 1rem 0;
         transition: .5s;
         ul {
