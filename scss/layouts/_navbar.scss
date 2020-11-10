@@ -1,11 +1,15 @@
 header {
     background: $primary;
     color: $secondary;
+    .navbar-brand {
+        display: none;
+    }
     .brand {
         padding: 1rem 0;
     }
     h3 {
         font-size: 2.5rem;
+        font-weight: bold;
         text-transform: uppercase;
         a {  
             color: $secondary;
@@ -25,32 +29,96 @@ header {
     .navbar {
         border-top: 1px solid $alternate;
         background: $primary !important;
-        text-align: center !important;
         padding: 1rem 0;
+
+        @media all and (min-width: 768px) {
+            .nav-item {
+                .dropdown-menu{ 
+                    display: none; 
+                    margin-top:0; 
+                }
+                &:hover {
+                    .dropdown-menu { 
+                        display: block; 
+                        background: $primary;
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+
+        .navbar-toggler-icon {
+            width: .5em;
+            height: .5em;
+        }
         ul {
             li {
+                margin: 0 .5rem;
                 a {
+                    font-size: 1.15rem;
                     color: $secondary !important;
                     text-transform: uppercase;
                     &:hover {
                         color: $ascent !important;
+                        background: none;
                     }
                 }
             }
         }
     }
 
-    @media all and (min-width: 768px) {
-        .navbar .nav-item .dropdown-menu{ 
-            display: none; 
+    @media all and (max-width: 768px) {
+        .navbar-brand {
+            display: block;
+            margin: 0 1rem;
+            text-transform: uppercase;
+            z-index: 3;
+            font-weight: bold;
+            font-size: 2rem;
         }
-        .navbar .nav-item:hover .dropdown-menu{ 
-            display: block; 
+        .navbar-toggler {
+            z-index: 3;
+            margin: .5rem 1rem;
+            outline: 0;
+        }
+
+        .logo {
+            display: none;
+        }
+
+        .dropdown-menu {
+            background: inherit;
+        }
+        .dropdown-item {
+            color: inherit !important;
+            padding: 0;
+            margin: .5rem 0;
+            &:hover {
+                background: none;
+            }
+        }
+
+        .navbar-collapse {
             background: $primary;
             color: $secondary;
+            position: fixed;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: .5s ease-in-out;
+            ul {
+                margin: 5rem 0;
+                li {
+                    font-size: 1rem;
+                    padding: .5rem 2rem;
+                    border-bottom: 1px solid $ascent;
+                    &:first-child {
+                        border-top: 1px solid $ascent;
+                    }
+                }
+            }
         }
-        .navbar .nav-item .dropdown-menu{ 
-            margin-top:0; 
-        }
-    }
+     }
 }
