@@ -2,8 +2,12 @@
     .service {
         padding: 1rem;
         margin: 1rem 0;
+       
         &:hover {
             opacity: .8;
+            img {                
+                transform: rotateY(180deg);
+            }
         }
     }
     .image {
@@ -11,6 +15,7 @@
             background: $primary;
             padding: 2rem;
             border-radius: 50%;
+            transition: 1s;
         }
     }
 

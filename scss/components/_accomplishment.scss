@@ -4,7 +4,9 @@
     padding: 1rem 0;
 
     .single {
+        transition: 1s;
         &:hover {
+            transform: rotate(360deg);
             opacity: .8;
         }
     }
