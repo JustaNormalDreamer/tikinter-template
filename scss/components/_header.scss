@@ -1,0 +1,36 @@
+.header {
+    margin-bottom: 5rem;
+    .image {
+        position: relative;
+        overflow: hidden;
+        .content {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            color: $secondary;
+            display: block;
+            opacity: .8;
+            background: $alternate;
+            padding: 2rem;
+            height: 150px;
+            margin: 2rem 0;
+            text-transform: uppercase;
+            &:hover {
+                    opacity: .7;
+            }
+            h3 {                
+                font-size: 2rem;
+                a {
+                    text-decoration: none;
+                    color: $secondary;
+                    transition: .3s;
+                    &:hover {
+                        color: $ascent;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+header {
+    background: $primary;
+    color: $secondary;
+    .brand {
+        padding: 1rem 0;
+    }
+    h3 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        a {  
+            color: $secondary;
+            transition: .3s;
+            &:hover {
+                text-decoration: none;
+                color: $ascent;
+            }
+        }
+    }
+    h5 {
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        color: $ascent;
+    }
+
+    .navbar {
+        border-top: 1px solid $alternate;
+        background: $primary !important;
+        text-align: center !important;
+        padding: 1rem 0;
+        ul {
+            li {
+                a {
+                    color: $secondary !important;
+                    text-transform: uppercase;
+                    &:hover {
+                        color: $ascent !important;
+                    }
+                }
+            }
+        }
+    }
+
+    @media all and (min-width: 768px) {
+        .navbar .nav-item .dropdown-menu{ 
+            display: none; 
+        }
+        .navbar .nav-item:hover .dropdown-menu{ 
+            display: block; 
+            background: $primary;
+            color: $secondary;
+        }
+        .navbar .nav-item .dropdown-menu{ 
+            margin-top:0; 
+        }
+    }
+}

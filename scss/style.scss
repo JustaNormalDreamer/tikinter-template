@@ -6,6 +6,7 @@
 @import 'font';
 
 //layouts
+@import 'layouts/navbar';
 @import 'layouts/footer';
 
 //components
@@ -18,3 +19,4 @@
 @import 'components/services';
 @import 'components/contact';
 @import 'components/cover';
+@import 'components/header';
