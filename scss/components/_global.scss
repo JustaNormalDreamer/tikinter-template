@@ -99,3 +99,10 @@ body {
         color: $ascent; 
     }
 }
+
+a {
+    color: $primary;
+    &:hover {
+        text-decoration: none !important;
+    }
+}
