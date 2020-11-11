@@ -91,7 +91,7 @@
                             <img src="image/header/1.png" alt="" />
                             <div class="content">
                                 <h3>
-                                    <a href="#0">Show Titles</a>
+                                    <a href="#0">Lorem ipsum dolor sit</a>
                                 </h3>
                                 <h5 class="date">Nov 10, 2020</h5>
                             </div>
@@ -838,46 +838,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/fontawesome.js"></script>
     <script src="js/owl.carousel.js"></script>
-    <script>
-        $('.testimonial-carousel').owlCarousel({
-            items: 1,
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            autoplayHoverPause: true,
-            dots: true,
-            responsiveClass: true,
-            responsive: {
-                768: {
-                    items: 2,
-                }
-            }
-        });
-
-        $('.carousel').owlCarousel({
-            items: 1,
-            loop: true,
-            autoplay: true,
-            dots: false,
-            autoplayTimeout: 3000,
-            autoplayHoverPause: true,
-            responsiveClass: true,
-            responsive: {
-                768: {
-                    items: 3,
-                }
-            }
-        });
-
-        // for scrolling
-        $("a[href^='#']").click(function (e) {
-            e.preventDefault();
-            var position = $($(this).attr("href")).offset().top;
-            $("body, html").animate({
-                scrollTop: position
-            } /* speed */);
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
